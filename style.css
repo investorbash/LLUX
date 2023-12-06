@@ -1,6 +1,9 @@
 /* NAV SECTION */
 body {
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
     background-color: #f8f9fa; /* Set the background color of the body */
 }
 
@@ -32,3 +35,63 @@ body {
     color: grey;
 }
 
+/* HOME PAGE SECTION */
+.image-matrix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    transition: trasform 500ms ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        width: 50%;
+    }  
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+ } 
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* FOOTER SECTION */
+footer {
+   background: #9D9D9D;
+   color: #F4F4F4;
+}
+
+footer form input[type="email"] {
+    background: inherit;
+    border: none;
+    outline: 1px solid gray;
+    color: #F4F4F4;
+}
+
+footer form input[type="email"]:focus {
+    background: inherit;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+}
+
+footer a:hover{
+    color: white;
+}
